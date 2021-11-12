@@ -15,7 +15,7 @@ public class PetiZadatak {
             System.out.println("My name is " + name + " I am " + year + " years old.");
         }
         if (year < 1 || year >= 130) {
-            System.out.println("Nemoj lagati godine!!!");
+            System.out.println("Invalid input!!!");
         } else if (year >=18) {
             System.out.println("-----------------------");
             System.out.println("You are an adult!");
