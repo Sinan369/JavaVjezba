@@ -17,13 +17,13 @@ public class PetiZadatak {
         if (year < 1 || year >= 130) {
             System.out.println("Nemoj lagati godine!!!");
         } else if (year >=18) {
-            System.out.println("----------------------");
+            System.out.println("-----------------------");
             System.out.println("You are an adult!");
-            System.out.println("----------------------");
+            System.out.println("-----------------------");
         } else if (year < 18) {
-            System.out.println("----------------------");
+            System.out.println("-----------------------");
             System.out.println("You are a minor!");
-            System.out.println("----------------------");
+            System.out.println("-----------------------");
         }
     }
 }
