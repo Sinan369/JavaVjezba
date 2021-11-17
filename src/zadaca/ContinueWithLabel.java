@@ -2,7 +2,7 @@ package zadaca;
 
 public class ContinueWithLabel {
     public static void main(String[] args) {
-        String recenica = "Trazim koliko se puta adi nasmijao. adi je zaista zabavan tip.adi";
+        String recenica = "Trazim koliko se puta adi nasmijao. adi je zdista zabavan tip.";
         String rijec = "adi";
         //--------------------------------------
         char[] recenicaNiz = recenica.toCharArray();
@@ -16,7 +16,7 @@ public class ContinueWithLabel {
             for (int y = 0; y < rijecNiz.length; y++){
                 char slovoRecenica = recenicaNiz[x+y];
                 char slovoRijec = rijecNiz[y];
-                if (y == rijecNiz.length - 1 && rijecNiz[y] == rijecNiz[y]){ //IF petlja koja provjerava broj puta ponavljanja riječi
+                if (y == rijecNiz.length - 1 && slovoRecenica == slovoRijec){ //IF petlja koja provjerava broj puta ponavljanja riječi
                     brojac++;
                 }
                 if (slovoRecenica != slovoRijec){
