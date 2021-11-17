@@ -2,22 +2,21 @@ package zadaca;
 
 public class ContinueWithLabel {
     public static void main(String[] args) {
-        String recenica = "Trazim koliko se puta adi nasmijao. adi je zaista zabavan tip.";
+        String recenica = "Trazim koliko se puta adi nasmijao. adi je zaista zabavan tip.adi";
         String rijec = "adi";
         //--------------------------------------
         char[] recenicaNiz = recenica.toCharArray();
         char[] rijecNiz = rijec.toCharArray();
-        int brojac = 0;
+        int brojac = 0; //Brojač
         int max = recenicaNiz.length - rijecNiz.length;
         boolean foundIt = false;
         //--------------------------------------
         NASA:
-
         for (int x = 0; x <= max; x++){
             for (int y = 0; y < rijecNiz.length; y++){
                 char slovoRecenica = recenicaNiz[x+y];
                 char slovoRijec = rijecNiz[y];
-                if (y == rijecNiz.length - 1){
+                if (y == rijecNiz.length - 1 && rijecNiz[y] == rijecNiz[y]){ //IF petlja koja provjerava broj puta ponavljanja riječi
                     brojac++;
                 }
                 if (slovoRecenica != slovoRijec){
